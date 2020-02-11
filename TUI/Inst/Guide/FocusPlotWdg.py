@@ -39,7 +39,7 @@ class FocusPlotWdg(tkinter.Frame):
 
         plotFig = matplotlib.figure.Figure()
         self.figCanvas = FigureCanvasTk(plotFig, self)
-        self.figCanvas.show()
+        self.figCanvas.draw()
         self.figCanvas.get_tk_widget().grid(row=0, column=0, sticky="news")
         if ShowToolbar:
             toolbar = NavigationToolbar2Tk(self.figCanvas, self)
