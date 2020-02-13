@@ -468,7 +468,7 @@ class TUIPrefs(PrefVar.PrefSet):
 
 def getFont(wdgClass, optionPattern=None):
     """Creates a Font object that is initialized to the default value of the specified
-    type of widget (e.g. Tkinter.Label). optionPattern is an option database pattern;
+    type of widget (e.g. tkinter.Label). optionPattern is an option database pattern;
     if supplied, an entry to the database is added for this pattern using this new Font.
     Hence the font can be connected up to automatically update a class of widgets.
     

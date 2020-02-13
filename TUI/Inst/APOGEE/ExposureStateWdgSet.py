@@ -128,7 +128,7 @@ if __name__ == '__main__':
     statusBar = TUI.Base.Wdg.StatusBar(root)
     statusBar.pack(side="top", expand=True, fill="x")
 
-#     Tkinter.Button(text="Demo", command=TestData.animate).pack(side="top")
+#     tkinter.Button(text="Demo", command=TestData.animate).pack(side="top")
 
     TestData.start()
 

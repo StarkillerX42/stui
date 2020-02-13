@@ -219,7 +219,7 @@ class _BaseUserScriptWdg(tkinter.Frame, BasicScriptWdg):
                     the script function is cancelled.
     - name          script name; used to report status
     - dispatcher    keyword dispatcher; required to use the doCmd and startCmd methods
-    All remaining keyword arguments are sent to Tkinter.Frame.__init__
+    All remaining keyword arguments are sent to tkinter.Frame.__init__
     """
     def __init__(self,
         master,

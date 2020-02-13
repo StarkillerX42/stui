@@ -57,7 +57,7 @@ class CatalogParser(object):
     """Object that will read in object catalogs, expand abbreviations,
     correct case and check limits.
     
-    Warning: uses a (hidden) Tkinter widget to perform value checking
+    Warning: uses a (hidden) tkinter widget to perform value checking
     and abbreviation expansion. Thus:
     - Do not call from a background thread.
     - Before calling you should already have created a root widget.

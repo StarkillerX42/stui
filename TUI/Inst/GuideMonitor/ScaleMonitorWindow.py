@@ -1,6 +1,6 @@
 import RO.Wdg
 import TUI
-#import Tkinter
+#import tkinter
 #import TUI.PlaySound
 import time
 import matplotlib

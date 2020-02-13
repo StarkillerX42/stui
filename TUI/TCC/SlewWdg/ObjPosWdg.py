@@ -67,7 +67,7 @@ class ObjPosWdg(RO.Wdg.InputContFrame):
     - master        master Tk widget -- typically a frame or window
     - userModel     a TUI.TCC.UserModel; specify only if global model
                     not wanted (e.g. for checking catalog values)
-    - **kargs       keyword arguments for Tkinter.Frame
+    - **kargs       keyword arguments for tkinter.Frame
     """
     def __init__ (self,
         master = None,

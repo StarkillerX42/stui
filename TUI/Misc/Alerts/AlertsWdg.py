@@ -156,7 +156,7 @@ class AlertInfo(object):
 
     @property
     def tags(self):
-        """Return tags used for displaying the data in a Tkinter Text widget.
+        """Return tags used for displaying the data in a tkinter Text widget.
         """
         return (
             "all",
@@ -220,7 +220,7 @@ class DisableRule(object):
 
     @property
     def tags(self):
-        """Return tags used for displaying the data in a Tkinter Text widget.
+        """Return tags used for displaying the data in a tkinter Text widget.
         """
         return (
             "all",
@@ -265,7 +265,7 @@ class DownInstrument(object):
 
     @property
     def tags(self):
-        """Return tags used for displaying the data in a Tkinter Text widget.
+        """Return tags used for displaying the data in a tkinter Text widget.
         """
         return (
             "all",

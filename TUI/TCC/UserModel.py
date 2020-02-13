@@ -70,7 +70,7 @@ class _ObjVar(RO.AddCallback.BaseMixin):
         self._doCallbacks()
 
 class _TkVar(RO.AddCallback.TkVarMixin):
-    """A container for a Tkinter Variable;
+    """A container for a tkinter Variable;
     basically provides a slightly nicer interface
     (since they already support callbacks).
     """

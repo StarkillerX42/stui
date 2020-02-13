@@ -31,7 +31,7 @@ class CalibWdg(RO.Wdg.OptionButtons):
     
     Inputs:
     - master        master Tk widget -- typically a frame or window
-    - **kargs       keyword arguments for Tkinter.Frame
+    - **kargs       keyword arguments for tkinter.Frame
     """
     def __init__ (self,
         master=None,

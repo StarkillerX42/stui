@@ -41,7 +41,7 @@ class FiducialsWdg(tkinter.Frame):
         - maxEntries: maximum number of entries for each axis
         - width: width of each log (chars); total window width adds some overhead
         - height: height of each log (chars); total window height is 3 x height plus some overhead
-        **kargs: additional keyword arguments for Tkinter.Frame
+        **kargs: additional keyword arguments for tkinter.Frame
         """
         tkinter.Frame.__init__(self, master, **kargs)
 

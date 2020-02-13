@@ -1,6 +1,6 @@
 import RO.Wdg
 import TUI.Models
-#import Tkinter
+#import tkinter
 import time
 
 class ScriptClass(object):

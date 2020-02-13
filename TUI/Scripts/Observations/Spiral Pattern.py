@@ -17,8 +17,8 @@ class ScriptClass(object):
         # if False, real time run
         sr.debug = False
         
-   #     F1 = Tkinter.Toplevel()
-   #     self.canvas = Tkinter.Canvas(F1, width=200, height=200)
+   #     F1 = tkinter.Toplevel()
+   #     self.canvas = tkinter.Canvas(F1, width=200, height=200)
    #     self.canvas.grid(row=0, column=0, sticky="news")
 
         sr.master.winfo_toplevel().wm_resizable(True, True)

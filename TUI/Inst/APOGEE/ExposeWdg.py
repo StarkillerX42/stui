@@ -264,7 +264,7 @@ if __name__ == '__main__':
             print(ditherCmd)
         print(testFrame.getExposureCmd())
 
-#     Tkinter.Button(text="Demo", command=TestData.animate).pack(side="top")
+#     tkinter.Button(text="Demo", command=TestData.animate).pack(side="top")
     tkinter.Button(text="Print Cmds", command=printCmds).pack(side="top")
 
     TestData.start()

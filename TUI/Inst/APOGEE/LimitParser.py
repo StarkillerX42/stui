@@ -5,6 +5,7 @@ History:
 2011-05-04 ROwen
 2011-05-17 ROwen    Bug fix: assumed 6 values, so reported a problem when dither limits were OK.
 2015-11-03 ROwen    Replace "== None" with "is None" and "!= None" with "is not None" to modernize the code.
+2020-02-12 DGatlin  Changed / to // for ints for Python 3
 """
 import RO.Constants
 
@@ -19,7 +20,7 @@ def limitParser(keyVar):
       * RO.Constants.sevWarning otherwise
     """
     severity = RO.Constants.sevNormal
-    numActuators = len(keyVar) / 2
+    numActuators = len(keyVar) // 2
     limStrDict = {
         True: "1",
         False: "0",

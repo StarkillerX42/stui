@@ -58,13 +58,13 @@ print(rel_software)
 bitmaps_rel = rel_software / 'RO/python/RO/Bitmaps/'
 data_added.append((str(bitmaps_rel), 'RO/Bitmaps/'))
 print(bitmaps_rel)
-opscore_rel = rel_software / 'opscore/trunk/python/opscore/'
+opscore_rel = rel_software / 'opscore/python/opscore/'
 data_added.append((str(opscore_rel), 'opscore/'))
 print(opscore_rel)
-actorkeys_rel = rel_software / 'actorkeys/trunk/python/actorkeys/'
+actorkeys_rel = rel_software / 'actorkeys/python/actorkeys/'
 data_added.append((str(actorkeys_rel), 'actorkeys/'))
 print(actorkeys_rel)
-plc_rel = rel_software / 'plc/trunk/python/plc/'
+plc_rel = rel_software / 'plc/python/plc/'
 if not plc_rel.exists():
     plc_rel = rel_software / 'plc/python/plc/'
 data_added.append((str(plc_rel), 'plc/'))

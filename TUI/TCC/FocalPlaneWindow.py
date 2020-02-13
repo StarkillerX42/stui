@@ -79,7 +79,7 @@ class Axis(object):
         labels (duple): text for x, y axis label
         ctr (duple): center point on canvas (pix)
         color: Tk color name
-        arrowShape: see Tkinter create_line arrowshape parameter; used for x and y
+        arrowShape: see tkinter create_line arrowshape parameter; used for x and y
         maxLabelWidth: the widest a label can be (in pixels)
         mirrors (duple): controls (left-right, up-down) mirroring;
             1 to not mirror, -1 to mirror

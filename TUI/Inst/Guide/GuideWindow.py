@@ -26,6 +26,6 @@ if __name__ == "__main__":
     
     addWindow(tlSet)
     tlSet.makeVisible(WindowName)
-#     Tkinter.Button(GuideTest.tuiModel.tkRoot, text="Demo", command=GuideTest.animate).pack()
+#     tkinter.Button(GuideTest.tuiModel.tkRoot, text="Demo", command=GuideTest.animate).pack()
 #     GuideTest.start()
     GuideTest.tuiModel.reactor.run()

@@ -148,7 +148,7 @@ if __name__ == '__main__':
     testFrame = ExposureTableWdg(tuiModel.tkRoot)
     testFrame.pack(side="top", expand="yes")
 
-#     Tkinter.Button(text="Demo", command=TestData.animate).pack(side="top")
+#     tkinter.Button(text="Demo", command=TestData.animate).pack(side="top")
 
     TestData.start()
 

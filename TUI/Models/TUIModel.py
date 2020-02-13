@@ -5,12 +5,12 @@ Includes the following items:
     note: the network connection is dispatcher.connection
 - prefs: the application preferences (TUI.TUIPrefs.TUIPrefs)
 - tlSet: the set of toplevels (windows) (RO.Wdg.ToplevelSet)
-- root: the root application window (Tkinter.Toplevel);
-    mostly used when one to execute some Tkinter command
-    (all of which require an arbitrary Tkinter object)
+- root: the root application window (tkinter.Toplevel);
+    mostly used when one to execute some tkinter command
+    (all of which require an arbitrary tkinter object)
 
-Note: the model must be created after the Tkinter root
-has been created. Otherwise you will get a Tkinter error.
+Note: the model must be created after the tkinter root
+has been created. Otherwise you will get a tkinter error.
 
 Most items are defined and loaded when the model is created.
 However, "tlSet" is empty to start; use this object to add

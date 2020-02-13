@@ -76,7 +76,7 @@ class RotWdg (RO.Wdg.InputContFrame):
     - userModel     a TUI.TCC.UserModel; specify only if global model
                     not wanted (e.g. for checking catalog values);
                     if specified, assumes rot exists with std limits
-    - **kargs       keyword arguments for Tkinter.Frame
+    - **kargs       keyword arguments for tkinter.Frame
     """
     # rotation types
 

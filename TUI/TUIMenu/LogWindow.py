@@ -295,7 +295,7 @@ class TUILogWdg(tkinter.Frame):
         # so they can easily be hidden and shown
         # (there is no pack_remove command).
 
-        #expandFrame = Tkinter.Frame(self).grid(row=0, column=ctrlCol1)
+        #expandFrame = tkinter.Frame(self).grid(row=0, column=ctrlCol1)
         self.ctrlFrame1.grid_columnconfigure(ctrlCol1, weight=1)
         ctrlCol1 += 1
 

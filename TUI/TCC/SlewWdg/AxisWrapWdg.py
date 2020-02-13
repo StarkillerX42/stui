@@ -42,7 +42,7 @@ class AxisWrapWdg(RO.Wdg.InputContFrame):
     - defButtonText text for the restore defaults button;
                     None for no button;
                     "" for default label ("Defaults")
-    - **kargs       keyword arguments for Tkinter.Frame
+    - **kargs       keyword arguments for tkinter.Frame
     """
     WrapOptions = ("Nearest", "Negative", "Middle", "Positive")
     def __init__ (self,
