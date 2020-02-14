@@ -12,16 +12,16 @@ individually.
 # Create an environment
 conda create -n tui27 python=2.7 numpy matplotlib pyinstaller pillow tk pathlib astropy pathlib twisted
 conda activate tui27
-pip install pygame pyfits
+pip install pygame pyfits carbon
 
 # Collect non-standard dependencies
 mkdir ~/software
 cd ~/software
 git clone https://github.com/ApachePointObservatory/RO  # Make sure all dependencies are in this parent directory
+git clone https://github.com/sdss/actorcore
+git clone https://github.com/sdss/actorkeys
+git clone https://github.com/sdss/opscore
 svn co https://svn.sdss.org/repo/operations/general/external/trunk external/trunk --username=<wiki-user>
-svn co https://svn.sdss.org/repo/operations/general/actorkeys/trunk actorkeys/trunk --username=<wiki-user>
-svn co https://svn.sdss.org/repo/operations/general/actorcore/trunk actorcore/trunk --username=<wiki-user>
-svn co https://svn.sdss.org/repo/operations/general/opscore/trunk opscore/trunk --username=<wiki-user>
 git clone https://github.com/ApachePointObservatory/stui  # This can be anywhere, as long as you build from inside it
 git clone https://github.com/StarkillerX42/plc
 ```
