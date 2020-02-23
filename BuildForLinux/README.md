@@ -10,9 +10,9 @@ I recommend you use a clean environment and install all necessary dependencies
 individually.
 ```
 # Create an environment
-conda create -n tui27 python=2.7 numpy matplotlib pyinstaller pillow tk pathlib astropy pathlib twisted
+conda create -n tui27 python=2.7 numpy matplotlib pyinstaller pillow tk astropy pathlib twisted
 conda activate tui27
-pip install pygame pyfits carbon
+pip install pygame
 
 # Collect non-standard dependencies
 mkdir ~/software

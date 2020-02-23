@@ -9,9 +9,11 @@ instructions.
 """
 
 import sys
+import os
 from pathlib import Path
 try:
     import RO
+    import RO.OS
     import actorcore
     import actorkeys
     import opscore
@@ -66,8 +68,8 @@ data_added.append((str(tui_dir / 'Models/'), 'TUI/Models/'))
 # Include all the necessary paths of non-python stuff (and a few pythons like
 # cmds.py. Not sure why cmds.py isn't included normally, but I think it has to
 # do with how it is imported using imp (in opscore/protocol/keys.py)
-bitmaps_dir = (dependencies_paths[RO] / 'Bitmaps/').absolute()
-data_added.append((str(bitmaps_dir), 'RO/Bitmaps/'))
+ro_dir = (dependencies_paths[RO]).absolute()
+data_added.append((str(ro_dir), 'RO/'))
 opscore_dir = (dependencies_paths[opscore]).absolute()
 data_added.append((str(opscore_dir), 'opscore/'))
 actorkeys_dir = (dependencies_paths[actorkeys]).absolute()
@@ -115,7 +117,10 @@ spec_file.write("          upx=True,\n")
 spec_file.write("          upx_exclude=[],\n")
 spec_file.write("          runtime_tmpdir=None,\n")
 spec_file.write("          console=True,\n")
-spec_file.write("          icon='STUI.icns')\n")
+if os.name == 'nt':  # icns files don't work on Windows
+    spec_file.write("          icon='STUI.ico')\n")
+else:
+    spec_file.write("          icon='STUI.icns')\n")
 spec_file.write("coll = COLLECT(exe,\n")
 spec_file.write("               a.binaries,\n")
 spec_file.write("               a.zipfiles,\n")
