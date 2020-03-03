@@ -30,15 +30,13 @@ History:
 2011-05-04 ROwen    Fixed the test code to make the focus window visible.
 """
 import tkinter
-import RO.Wdg
-import RO.TkUtil
-import RO.StringUtil
 import TUI.Models
 import opscore.actor.keyvar
 import TUI.Base.Wdg
 
 WindowName = "TCC.Secondary Focus"
 _HelpURL = "Telescope/SecFocusWin.html"
+
 
 def addWindow(tlSet):
     """Create the window for TUI.
